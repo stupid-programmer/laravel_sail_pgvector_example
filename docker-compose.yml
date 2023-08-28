@@ -40,6 +40,7 @@ services:
             - 'sail-pgsql:/var/lib/postgresql/data'
             - './docker/pgsql/create-testing-database.sql:/docker-entrypoint-initdb.d/10-create-testing-database.sql'
             - './docker/pgsql/vector-extension.sql:/docker-entrypoint-initdb.d/11-vector-extension.sql'
+            - './docker/pgsql/testing-database-vector-extension.sh:/docker-entrypoint-initdb.d/12-testing-database-vector-extension.sh'
         networks:
             - sail
         healthcheck:
