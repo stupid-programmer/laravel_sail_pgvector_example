@@ -15,3 +15,7 @@ See commits for what was changed.
 10. connect to database and see if the vector extension is installed with 
 
 ### For a better run through see the blog post that I'll link here when it's done
+
+#### Improvements
+
+- [ ] Need to ensure the postgres version is using the env variable throughout
